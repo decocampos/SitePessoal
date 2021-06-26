@@ -1,20 +1,15 @@
-#titulo{background-color: aquamarine;font-size: 30pt;color: white;}
-#link{background-color: brown;}
-.alerta{background-color: yellow; font-size: 15pt;text-align: center;}
-h1{text-align: center;}
 header{
-    background-color:#C4C4C4;
-    
+    background-color:#C4C4C4
 }
-h1,h5{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-nav{
+header nav{
     display: flex;
     justify-content: space-around;
 }
-ul{
+header nav p{
+    font-weight: bold;
+    font-size: 32px;
+}
+header nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -31,7 +26,48 @@ button{
     border: 0;
     
 }
-nav p{
-    font-weight: bold;
-    font-size: 32px;
+
+@media (max-width: 480px) {
+    body{
+        height: calc(100vh - 55px);
+    }
+    header nav ul{
+        position: fixed;
+        bottom:0;
+        left:0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        background-color: #c4c4c4;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button{
+        margin-top: auto;
+        color: white;
+        background-color: #a3a7cf;
+        margin: 15px;
+        font-size: 20px;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 0;
+    }
 }
+#titulo{background-color: aquamarine;font-size: 30pt;color: white;}
+#link{background-color: brown;}
+.alerta{background-color: yellow; font-size: 15pt;text-align: center;}
+h1{text-align: center;}
+
+h1,h5{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
