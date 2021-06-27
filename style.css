@@ -73,22 +73,22 @@ button:hover{
     margin-left: 50px;
 }
   
-.mySlides {display: none;
-}
-
-
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   margin: auto;
+  height: 450px;
 }
-img {vertical-align: middle;
+.mySlides {display: none;
+    vertical-align: middle;
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow:hidden;
 }
 
 /* The dots/bullets/indicators */
 .dot {
+  display: none;
   cursor: pointer;
   height: 15px;
   width: 15px;
