@@ -8,15 +8,15 @@
         <style>a{display:block;}</style>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="body">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
+            <img class="perfil" src="perfil.png" alt="Perfil">
+            <a href="https://www.linkedin.com/in/andre-vinicius-campos-lucena-b79333185/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/decocampos/" target="_blank">Instagram</a>
             <a href="#">Contact</a>
         </div>
-        <header id="header"> 
+        <header> 
             <nav> 
                 <div id="infos">
                     <button onclick="openNav()">☰ AC</button> 
@@ -33,16 +33,15 @@
         <script>
             function openNav() {
               document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("header").style.marginLeft = "250px";
+              document.getElementById("body").style.marginLeft = "250px";
             }
             
             function closeNav() {
               document.getElementById("mySidebar").style.width = "0";
-              document.getElementById("header").style.marginLeft= "0";
+              document.getElementById("body").style.marginLeft= "0";
             }
         </script>
         <h1 id="titulo">Bem Vindo ao meu Site, a cada aula de CSS 3 de HTML</h1>
-        <h1 id="link"><a href="https://www.linkedin.com/in/andre-vinicius-campos-lucena-b79333185/" target="_blank">LinkedIn</a></h1>
         <a class="alerta" href="javascript:alert('Deco');">Deco</a>
     </body>
 </html>

@@ -5,11 +5,7 @@ header nav{
     display: flex;
     justify-content: space-between;
 }
-header nav p{
-    font-weight: bold;
-    font-size: 32px;
-    margin-left: 32px;
-}
+
 header nav ul{
     list-style: none;
     display: flex;
@@ -28,6 +24,9 @@ button{
     cursor: pointer;
     
 }
+#infos{
+    padding: 15px;
+}
 button:hover{
     background-color:#444;
 }
@@ -38,12 +37,17 @@ button:hover{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(29, 28, 28);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
-  
+.sidebar .perfil{
+    width: 40%;
+    margin-left: 75px;
+    border-radius: 8px;
+
+}
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -65,9 +69,10 @@ button:hover{
     margin-left: 50px;
 }
   
-#infos {
+#body {
+    margin: 0px;
     transition: margin-left .5s;
-    padding: 16px;
+    
 }
 @media (max-width: 480px) {
     body{
@@ -101,7 +106,6 @@ button:hover{
     }
 }
 #titulo{background-color: aquamarine;font-size: 30pt;color: white;}
-#link{background-color: brown;}
 .alerta{background-color: yellow; font-size: 15pt;text-align: center;}
 h1{text-align: center;}
 
