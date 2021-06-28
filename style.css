@@ -15,7 +15,7 @@ header nav ul{
     display: flex;
     flex-direction: row;
 }
-button{
+header nav button{
     margin-top: auto;
     color: white;
     background-color: #a3a7cf;
@@ -52,16 +52,8 @@ button:hover{
     border-radius: 8px;
 
 }
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidebar a:hover {
+ 
+.closebtn:hover {
     color: #f1f1f1;
 }
   
@@ -71,6 +63,11 @@ button:hover{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
   
 /* Slideshow container */
@@ -78,6 +75,45 @@ button:hover{
   position: relative;
   margin: auto;
   height: 450px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+  
+.title {
+    color: grey;
+    font-size: 18px;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+#social {
+    display: inline;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+  
+button:hover, a:hover {
+    opacity: 0.7;
 }
 .mySlides {display: none;
     vertical-align: middle;
@@ -87,6 +123,15 @@ button:hover{
 }
 
 /* The dots/bullets/indicators */
+#triangulo{
+    display: inline-block;
+    width:0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #2C56C2;
+    display: inline;
+}
 .dot {
   display: none;
   cursor: pointer;

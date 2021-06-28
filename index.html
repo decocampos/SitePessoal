@@ -7,14 +7,23 @@
         <title>André Campos</title>
         <style>a{display:block;}</style>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body id="body">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <img class="perfil" src="perfil.png" alt="Perfil">
-            <a href="https://www.linkedin.com/in/andre-vinicius-campos-lucena-b79333185/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/decocampos/" target="_blank">Instagram</a>
-            <a href="#">Contact</a>
+            <div class="card">
+                <img src="perfil.png" alt="André" style="width:100%">
+                <h1>André Campos</h1>
+                <p class="title">CEO & Founder, Example</p>
+                <p>Federal University of Pernambuco</p>
+                <div>
+                  <a id="social" href="https://www.instagram.com/decocampos/" target=".blanck" ><i class="fa fa-instagram"></i></a>  
+                  <a id="social" href="https://www.linkedin.com/in/andre-vinicius-campos-lucena-b79333185/" target=".blanck"><i class="fa fa-linkedin"></i></a>  
+                  <a id="social" href="#"><i class="fa fa-facebook"></i></a> 
+                </div>
+                <p><button>Contact</button></p>
+              </div>
         </div>
         <header> 
             <nav> 
@@ -56,11 +65,11 @@
             </div>
             
         </div>
-        <div style="text-align:center">
+        <div style="text-align:center"><div id="triangulo">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+        </div></div>
         
         
         <script>
