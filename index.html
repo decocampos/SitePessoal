@@ -12,18 +12,16 @@
     <body id="body">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <div class="card">
                 <img src="perfil.png" alt="André" style="width:100%">
                 <h1>André Campos</h1>
-                <p class="title">CEO & Founder, Example</p>
+                <p class="work">Product Specialist, CITi</p>
                 <p>Federal University of Pernambuco</p>
                 <div>
                   <a id="social" href="https://www.instagram.com/decocampos/" target=".blanck" ><i class="fa fa-instagram"></i></a>  
                   <a id="social" href="https://www.linkedin.com/in/andre-vinicius-campos-lucena-b79333185/" target=".blanck"><i class="fa fa-linkedin"></i></a>  
                   <a id="social" href="mailto:andrecamposlu@gmail.com"><i class="fa fa-envelope"></i></a> 
+                  <a id="social" href="https://www.youtube.com/channel/UCdUDYkvEZKGO4CnBxCJh__g/videos" target=".blanck"><i class="fa fa-youtube"></i></a> 
                 </div>
-                <p><button>Contact</button></p>
-              </div>
         </div>
         <header> 
             <nav> 
@@ -35,7 +33,7 @@
                     <button>Experiences</button>
                     <div class="dropdown">
                         <button>Projects 
-                          <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
                           <a href="#">Herói Cuidador</a>
@@ -58,56 +56,56 @@
               document.getElementById("body").style.marginLeft= "0";
             }
         </script>
-        <div class="slideshow-container">
+<div class="slideshow-container">
 
-            <div class="mySlides fade">
-            <img src="fundo.png" alt="Notícia1">
-            </div>
+    <div class="mySlides fade">
+        <img src="fundo.png" alt="Notícia1">
+    </div>
             
-            <div class="mySlides fade">
-            <img src="fundo2.png" alt="Notícia2">
-            </div>
+    <div class="mySlides fade">
+        <img src="fundo2.png" alt="Notícia2">
+    </div>
             
-            <div class="mySlides fade">
-            <img src="img_mountains_wide.jpg" alt="Notícia3">
-            </div>
+    <div class="mySlides fade">
+        <img src="img_mountains_wide.jpg" alt="Notícia3">
+    </div>
             
-        </div>
-        <div style="text-align:center"><div id="triangulo">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div></div>
-        
-        
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
+</div>
+<div style="text-align:center"><div id="triangulo">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div></div>  
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
             
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
             
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
             
-            function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            }
-        </script>
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+
 <div class="timeline">
     <div class="container left">
         <button type="button" class="collapsible">2017</button>
@@ -163,7 +161,5 @@
     });
   }
 </script>
-        <h1 id="titulo">Bem Vindo ao meu Site, a cada aula de CSS 3 de HTML</h1>
-        <a class="alerta" href="javascript:alert('Deco');">Deco</a>
     </body>
 </html>
