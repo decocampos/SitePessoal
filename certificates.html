@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>André Campos - Certificates</title>
+        <link rel="stylesheet" href="certificates.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body id="body">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <img src="perfil.png" alt="André" style="width:100%">
+                <h1>André Campos</h1>
+                <p class="work">Product Specialist, CITi</p>
+                <p>Federal University of Pernambuco</p>
+                <div>
+                  <a id="social" href="https://www.instagram.com/decocampos/" target=".blanck" ><i class="fa fa-instagram"></i></a>  
+                  <a id="social" href="https://www.linkedin.com/in/andre-vinicius-campos-lucena-b79333185/" target=".blanck"><i class="fa fa-linkedin"></i></a>  
+                  <a id="social" href="mailto:andrecamposlu@gmail.com"><i class="fa fa-envelope"></i></a> 
+                  <a id="social" href="https://www.youtube.com/channel/UCdUDYkvEZKGO4CnBxCJh__g/videos" target=".blanck"><i class="fa fa-youtube"></i></a> 
+                </div>
+        </div>
+        <header> 
+            <nav> 
+                <div id="infos">
+                    <button onclick="openNav()">☰ AC</button> 
+                </div>
+                <ul> 
+                    <a href="index.html"><button>About</button></a>
+                    <button>Experiences</button>
+                    <div class="dropdown">
+                        <button>Projects 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Herói Cuidador</a>
+                          <a href="#">Flora</a>
+                        </div>
+                    </div>
+                    <button>Certificates</button> 
+                    <button>Contact</button>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("body").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("body").style.marginLeft= "0";
+            }
+        </script>
+    </body>
+</html>
